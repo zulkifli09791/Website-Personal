@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titlle>Game Tebak Angka</titlle>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tebak Angka</h1>
+        <p>Bot akan memilih angka, Kamu harus menebak angka tersebut!</p>
+
+        <div id="level-container">
+            <label for="level">Pilih level:</label>
+            <select id="level">
+                <option value="easy">Mudah (1-10)</option>
+                <option value="medium">Sedang (1-50)</option>
+                <option value="hard">Sulit (1-100)</option>
+            </select>
+        </div>
+
+        <div id="game">
+            <p><strong>Angka yang dipilih Bot: </strong> <span id="hint">???</span></p>
+            <input type="number" id="guessInput" placeholder="Tebak angkanya...">
+            <button id="guessBtn">Tebak</button>
+
+            <p id="result"></p>
+        </div>
+
+        <button id="restartBtn" style="display: none">Main Lagi</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
